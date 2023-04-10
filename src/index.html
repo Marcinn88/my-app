@@ -8,9 +8,25 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    
-    <include src="./partials/application.html"></include>
-    <!-- <include src="./partials/example.html"></include> -->
+<div class="wrapper">
+        <fieldset id="fieldset">
+            <legend>Wybierz kalkulator:</legend>
+            
+            <div>
+                <input type="radio" id="checkBoxBMI" name="calc" value="1">
+                <label for="bmi">Kalkulator BMI</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="checkBoxUnit" name="calc" value="2">
+                <label for="unit">Kalkulator Jednostek</label>
+            </div>
+            <button id="GenButton">Generuj</button>
+        </fieldset>
+        <div class="BMI_wrapper">
+
+        </div>
+        <div class="Unit_wrapper"></div>
+</div>
   </body>
 </html>
