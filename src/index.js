@@ -7,8 +7,11 @@ const checkBoxUnit = document.querySelector('#checkBoxUnit')
 const generatorButton = document.querySelector('#GenButton')
 
 generatorButton.addEventListener('click', click = () => {
+    // Generowanie kalkulatora BMI
         if(checkBoxBMI.checked==true){
             unitForm.innerHTML = ``
+            unitForm.classList.add('hidden')
+            bmiForm.classList.remove('hidden')
             bmiForm.innerHTML = `<form class="form_class">
             <p>Waga</p>
             <input><p>Wzrost</p><input><p>Wiek</p>
@@ -16,13 +19,17 @@ generatorButton.addEventListener('click', click = () => {
             </form>
             <div class="form_results">BMI RESULTS</div>`
             }
+    // Generowanie kalkulatora jednostek
          if (checkBoxUnit.checked==true) {
                 bmiForm.innerHTML = ``
+                bmiForm.classList.add('hidden')
+                unitForm.classList.remove('hidden')
                 unitForm.innerHTML = `<form class="form_class">
                 <p>Kg</p>
                 <input><p>Odległość</p><input><p>dystans</p>
                 <input><button>Prześlij</button>
-                </form>`}
+                </form>
+                <div class="form_results">Unit Results</div>`}
 })
 
 
