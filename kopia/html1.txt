@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My application</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+<div class="wrapper">
+        <fieldset id="fieldset">
+            <p>Wybierz kalkulator:</p>
+            
+            <div>
+                <input type="radio" id="checkBoxBMI" name="calc" value="1">
+                <label for="bmi">Kalkulator BMI</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="checkBoxUnit" name="calc" value="2">
+                <label for="unit">Kalkulator Jednostek</label>
+            </div>
+            <button id="GenButton">Generuj</button>
+        </fieldset>
+        <div class="BMI_wrapper hidden"></div>
+        <div class="Unit_wrapper hidden"></div>
+</div>
+  </body>
+</html>
