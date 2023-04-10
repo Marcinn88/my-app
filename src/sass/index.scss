@@ -2,14 +2,17 @@
 .wrapper{
     padding: 20px;
     width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 #fieldset{
-border: solid 2px rgb(255, 227, 190);
+width: 100%;
+border: solid 2px rgb(6, 72, 110);
 padding: 20px;
 margin-left: auto;
 margin-right: auto;
 border-radius: 20px;
-background-color: #fdfaef;
+background-color: #3984b6;
 box-shadow: 2px 2px 14px 0px rgba(66, 68, 90, 1);
 display: flex;
 flex-direction: column;
@@ -22,6 +25,11 @@ button{
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #0c355f;
+    color: #c9e0f7;
+    font-size: 18px;
+
+
 }
 }
 .BMI_wrapper{
@@ -38,14 +46,14 @@ box-shadow: 2px 2px 14px 0px rgba(66, 68, 90, 1);
 }
 .Unit_wrapper{
     display: flex;
-    border: solid 2px rgb(89, 226, 146);
+    border: solid 2px rgb(119, 89, 226);
     margin-top:20px;
     padding: 20px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-    background-color: #c9f7e5;
+    background-color: #c9e5f7;
     box-shadow: 2px 2px 14px 0px rgba(66, 68, 90, 1);
 }
 .form_class{
